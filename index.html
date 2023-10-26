@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Ihre Meta-Tags und Verweise hier -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Online-Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TM Fashion Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#tshirts">T-Shirts</a></li>
+        <li><a href="#handyhüllen">Handyhüllen</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Produkt suchen">
+        <button id="search-button">Suchen</button>
+      </div>
+      <button class="cart-button">Einkaufswagen</button>
+    </nav>
+  </header>
+
+  <section class="products" id="tshirts">
+    <h2>T-shirt</h2>
+    <div class="product">
+      <!-- T-Shirt-Produkt 1 - Vorderansicht -->
+      <div class="product-view">
+        <img src="Timo Blume.png" alt="Timo Blume.png">
+        <!-- Pfeil zum Umschalten zwischen Vorder- und Rückansicht -->
+        <div class="arrow">→</div>
+      </div>
+      <!-- T-Shirt-Produkt 1 - Rückansicht (anfangs ausgeblendet) -->
+      <div class="product-view product-view-back">
+        <img src="Timo Rückseite.png" alt="Timo Blume_back.png">
+        <!-- Pfeil zum Zurückkehren zur Vorderansicht -->
+        <div class="arrow">←</div>
+      </div>
+      <h3>Classic TM</h3>
+      <p>1a Qualität</p>
+      <p class="price">49,95€</p>
+      <button class="add-to-cart" data-product-name="Classic TM" data-product-price="49.95">In den Warenkorb</button>
+    </div>
+    <div class="product">
+      <!-- T-Shirt-Produkt 2 - Vorderansicht -->
+      <div class="product-view">
+        <img src="Timo.png" alt="Timo.png">
+        <!-- Pfeil zum Umschalten zwischen Vorder- und Rückansicht -->
+        <div class="arrow">→</div>
+      </div>
+      <!-- T-Shirt-Produkt 2 - Rückansicht (anfangs ausgeblendet) -->
+      <div class="product-view product-view-back">
+        <img src="Timo Back.png" alt="Timo_back.png">
+        <!-- Pfeil zum Zurückkehren zur Vorderansicht -->
+        <div class="arrow">←</div>
+      </div>
+      <h3>Reverse TM</h3>
+      <p>1b Qualität</p>
+      <p class="price">54,95€</p>
+      <button class="add-to-cart" data-product-name="Reverse TM" data-product-price="54.95">In den Warenkorb</button>
+    </div>
+  </section>
+
+  <section class="products" id="handyhüllen">
+    <h2>Handyhüllen</h2>
+    <div class="product">
+      <!-- Handyhülle-Produkt 1 -->
+      <img src="Erklärbär 2 .png" alt="Julian Bär.png">
+      <h3>Erklärbär</h3>
+      <p>Damit du den Durchblick hast</p>
+      <p class="price">69,69€</p>
+      <button class="add-to-cart" data-product-name="Erklärbär" data-product-price="59.95">In den Warenkorb</button>
+    </div>
+    <div class "product">
+      <!-- Handyhülle-Produkt 2 -->
+      <img src="Schere in the sky.png" alt="Timo Auge.png">
+      <h3>Heb die Schere</h3>
+      <p>Mr. Crabs</p>
+      <p class="price">149,99€</p>
+      <button class="add-to-cart" data-product-name="Timo der Augenleger" data-product-price="99.99">In den Warenkorb</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Auf Wiedersehen... Kaufen Sie doch jetzt!!!!</p>
+  </footer>
+
+  <div class="cart-overlay">
+    <div class="cart-content">
+      <p>Der Einkaufswagen ist leer.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
