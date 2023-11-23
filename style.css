@@ -99,32 +99,6 @@ nav a {
   cursor: pointer;
 }
 
-/* Stile für den Warenkorb (falls benötigt) */
-.cart-button {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-/* Stile für das Einkaufswagen-Overlay (falls benötigt) */
-.cart-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .cart-content {
   background-color: rgb(255, 255, 255);
   padding: 20px;
@@ -139,13 +113,3 @@ nav a {
   padding: 10px 0;
 }
 
-.clear-cart-button {
-  position: fixed;
-  top: 20px;
-  right: 120px; /* Abstand vom Einkaufswagen-Button */
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}

@@ -19,7 +19,6 @@
         <input type="text" id="search-input" placeholder="Produkt suchen">
         <button id="search-button">Suchen</button>
       </div>
-      <button class="cart-button">Einkaufswagen</button>
     </nav>
   </header>
 
@@ -73,7 +72,7 @@
       <p class="price">69,69€</p>
       <button class="add-to-cart" data-product-name="Erklärbär" data-product-price="59.95">In den Warenkorb</button>
     </div>
-    <div class "product">
+    <div class="product">
       <!-- Handyhülle-Produkt 2 -->
       <img src="Schere in the sky.png" alt="Timo Auge.png">
       <h3>Heb die Schere</h3>
@@ -87,10 +86,13 @@
     <p>Auf Wiedersehen... Kaufen Sie doch jetzt!!!!</p>
   </footer>
 
-  <div class="cart-overlay">
-    <div class="cart-content">
-      <p>Der Einkaufswagen ist leer.</p>
+  <!-- Warenkorb-Bereich -->
+  <div class="cart-content" id="cart-content">
+    <h2>Warenkorb</h2>
+    <div class="cart-items" id="cart-items">
+      <!-- Hier werden die ausgewählten Produkte eingefügt -->
     </div>
+    <p>Gesamtpreis: <span id="total-price">0.00€</span></p>
   </div>
 
   <script src="script.js"></script>
